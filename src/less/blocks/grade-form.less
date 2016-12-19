@@ -1,0 +1,66 @@
+.grade-form{
+  background-color: @gray-light;
+
+  &__inner {
+    .container;
+    padding-top: 45px;
+    padding-bottom: 50px;
+
+    @media (max-width: @screen-xl){
+          padding-left: 0px;
+          padding-right: 0px;
+      }
+
+  }
+
+  &__row {
+    .row;
+    @media (max-width: @screen-xl){
+      margin: 0;
+    }
+  }
+
+  &__step{
+    .col (xs, 12);
+    font-size: @font-size-small;
+    color: @gray-dark;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: @letter-spacing;
+    margin-bottom: 0;
+    margin-top: 0;
+    @media (max-width: @screen-xl){
+          padding-left: 0px;
+          padding-right: 0px;
+      }
+  }
+
+  &__item{
+    .col (xs, 12);
+
+    @media (max-width: @screen-xl){
+          padding-left: 0px;
+          padding-right: 0px;
+      }
+  }
+
+  &__subtitle{
+    .col (xs, 12);
+    font-family: @font-family-serif;
+    font-size: (@font-size-h2 - 4px);
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: @letter-spacing/3;
+    margin-top: 0;
+
+    @media (max-width: @screen-xl){
+          padding-left: 0px;
+          padding-right: 0px;
+      }
+
+    @media (min-width: @screen-md) {
+      margin-bottom: 25px;
+    }
+  }
+}

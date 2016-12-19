@@ -1,0 +1,70 @@
+.accommodation {
+  background-color: @color-logo;
+  padding: 38px 0 45px;
+  position: relative;
+  background-image: url(img/accomodation_bg.jpg);
+  background-size: cover;
+  background-position: center;
+
+  &__inner{
+    .container;
+  }
+
+  &__row{
+    .row;
+    justify-content: center;
+  }
+
+  &__subtitle {
+      .col (xs, 12);
+      font-size: @font-size-h2 - 4px;
+      font-family: @font-family-serif;
+      color: @white;
+      font-weight: normal;
+      margin-bottom: 30px;
+      margin-top: 0;
+      text-align: center;
+
+    @media (min-width: @screen-sm) {
+      font-size: @font-size-h2;
+      }
+    }
+
+  &__list {
+    .col (xs, 12);
+    .col (md, 6);
+    .col (xl, 4);
+  }
+
+  &__list-item {
+    width: 100%;
+    margin-bottom: 18px;
+
+  }
+
+  &__list-link {
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    min-height: 335px;
+    background-color: @white;
+    color: @gray-base;
+    border: 1px solid #21afa0;
+  }
+
+   &__img{
+    width: 100%;
+    min-height: 200px;
+  }
+
+  &__room-price{
+    padding-bottom: 10px;
+  }
+
+  &__caption {
+    font-family: @font-family-serif;
+    font-size: @font-size-h2 - 4px;
+    margin-bottom: 0;
+  }
+
+}

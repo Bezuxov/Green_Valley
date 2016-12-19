@@ -1,0 +1,113 @@
+.service-slider{
+  &__inner{
+    .container;
+    background-image: url(../img/service-slider_bg.png);
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    background-size: auto;
+
+      @media (max-width: @screen-xl) {
+        background-size: 100%;
+      }
+
+  }
+
+  &__row{
+    .row;
+    // flex-direction: column;
+    margin: auto;
+    align-items: center;
+    min-height: 318px;
+
+      @media (min-width: @screen-xl) {
+        min-height: 436px;
+      }
+  }
+
+  &__title {
+    .col (xs, 10);
+    .col (xl, 8);
+    margin-top: 40px;
+    font-size: @font-size-h2 - 4px;
+    font-family: @font-family-serif;
+    color: @black;
+    font-weight: normal;
+    text-align: center;
+    margin: 0 auto;
+    letter-spacing: @letter-spacing;
+      @media (min-width: @screen-sm) {
+        font-size: @font-size-h2;
+    }
+  }
+
+  &__text {
+    .col (xs, 12);
+    .col (md, 10);
+    .col (xl, 6);
+    text-align: center;
+    color: @black;
+    margin: 0 auto;
+  }
+
+  &__list {
+    .hidden-down (sm);
+    .col (sm, 10);
+    .col (xl, 12);
+    display: inline-block;
+    text-align: center;
+    margin: 40px 0;
+    letter-spacing: @letter-spacing;
+  }
+
+  &__list-item {
+    display: inline-block;
+    line-height: 18px;
+    color: @gray-base;
+    font-size: @font-size-small;
+    text-transform: uppercase;
+    font-weight: 500;
+    vertical-align: top;
+    width: 80px;
+    margin: 0 27px;
+    margin-bottom: 20px;
+    padding-top: 90px;
+    position: relative;
+
+    &:before {
+    content: '';
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 0;
+    }
+    &:nth-child(1):before {
+     background-image: url(../img/service-slider__list-item-1.jpg);
+    }
+
+    &:nth-child(2):before {
+     background-image: url(../img/service-slider__list-item-2.jpg);
+    }
+
+    &:nth-child(3):before {
+     background-image: url(../img/service-slider__list-item-3.jpg);
+    }
+
+    &:nth-child(4):before {
+     background-image: url(../img/service-slider__list-item-4.jpg);
+    }
+
+    &:nth-child(5):before {
+     background-image: url(../img/service-slider__list-item-5.jpg);
+    }
+
+    &:nth-child(6):before {
+     background-image: url(../img/service-slider__list-item-6.jpg);
+    }
+  }
+}

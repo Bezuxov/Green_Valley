@@ -1,0 +1,49 @@
+.page-footer {
+
+  border-top: 1px solid @gray-lighter;
+
+  &__inner{
+    .container;
+
+  }
+
+  &__row{
+    .row;
+    justify-content: center;
+    align-items: center;
+    min-height: 130px;
+  }
+
+  &__address{
+    .hidden-down (lg);
+    .col (xl, 2);
+    font-size: @font-size-small;
+    line-height: 18px;
+    padding-left: 30px;
+  }
+
+  &__social {
+    .col (xs, 6);
+    .col (sm, 4);
+    .col (xl, 2);
+    .col-offset(xl, 2);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__social-links {
+    .row;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__social-item {
+    .col (xs, 4);
+  }
+
+}

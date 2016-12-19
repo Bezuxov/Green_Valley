@@ -1,0 +1,73 @@
+.stitches-sprite(@x: 0, @y: 0, @width: 0, @height: 0) {
+    background-position: @x @y;
+    width: @width;
+    height: @height;
+}
+
+.sprite_1 {
+    background-image: url(../img/sprites/spritesheet_1.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+
+    &.sprite-arrow-white {
+        .stitches-sprite(-10px, -10px, 20px, 37px);
+    }
+
+    &.sprite-form-check {
+        .stitches-sprite(-50px, -10px, 16px, 12px);
+    }
+
+    &.sprite-form-error {
+        .stitches-sprite(-86px, -10px, 13px, 13px);
+    }
+
+    &.sprite-icon-calendar {
+        .stitches-sprite(-119px, -10px, 15px, 16px);
+    }
+
+    &.sprite-info-room_coner {
+        .stitches-sprite(-154px, -10px, 9px, 15px);
+    }
+
+    &.sprite-price-error {
+        .stitches-sprite(-183px, -10px, 13px, 12px);
+    }
+
+    &.sprite-slider-colorbox-zoom {
+        .stitches-sprite(-216px, -10px, 22px, 22px);
+    }
+}
+
+.sprite_2 {
+    background-image: url(../img/sprites/spritesheet_2.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+
+    &.sprite-form-check-gray {
+        .stitches-sprite(-10px, -10px, 16px, 12px);
+    }
+
+    &.sprite-form-question {
+        .stitches-sprite(-46px, -10px, 16px, 17px);
+    }
+
+    &.sprite-review-fb {
+        .stitches-sprite(-82px, -10px, 17px, 17px);
+    }
+
+    &.sprite-review-vk {
+        .stitches-sprite(-119px, -10px, 22px, 13px);
+    }
+
+    &.sprite-icon-fb {
+        .stitches-sprite(-161px, -10px, 20px, 20px);
+    }
+
+    &.sprite-icon-inst {
+        .stitches-sprite(-201px, -10px, 21px, 20px);
+    }
+
+    &.sprite-icon-vk {
+        .stitches-sprite(-242px, -10px, 25px, 14px);
+    }
+}

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<html lang="ru" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="content-type" content="Тип документа и его кодировка">
+        <meta content="width=device-width,initial-scale=1" name=viewport>
+        <meta name="keywords" content="ключевые слова">
+        <meta name="description" content="описание страницы">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Serif+Caption&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+
+      <title>Бронирование</title>
+    </head>
+    <body>
+        <header class="page-header">
+            <div class="page-header__inner">
+              <div class="page-header__main-logo">
+                <a href="#" class="main-logo"><img src="img/logo.png" alt="logo"></a>
+              </div>
+              <div class="burger-menu">
+                <div class="burger">
+                  <a href="#" class="main-nav__icon-mobile" id="main-nav-mobile">
+                    <span class="main-nav__icon-bar"></span>
+                    <span class="main-nav__icon-bar"></span>
+                    <span class="main-nav__icon-bar"></span>
+                  </a>
+                </div>
+              </div>
+
+                 <div class="main-nav">
+                     <nav class="main-nav__nav">
+                         <ul class="main-nav__list">
+                             <li class="main-nav__item"><a class="main-nav__link" href="room.html">Номера</a></li>
+                             <li class="main-nav__item"><a class="main-nav__link" href="single_room.html">Коттедж</a></li>
+                             <li class="main-nav__item"><a class="main-nav__link" href="">Ресторан</a></li>
+                             <li class="main-nav__item"><a class="main-nav__link" href="">Отдых</a></li>
+                             <li class="main-nav__item"><a class="main-nav__link" href="">Контакты</a></li>
+                         </ul>
+                     </nav>
+                     <span class="main-nav__toggler"></span>
+                 </div>
+
+                <div class="page-header__contacts">
+                    <a href="tel:+7 (812) 000000" class="page-header__phone-link">+7 812 000000</a>
+                    <div class="page-header__address">адрес</div>
+                </div>
+                <div class="page-header__btn">
+                <a href="form.html" class="btn btn--bg-orange btn--icon-calendar">Забронировать</a>
+              </div>
+            </div>
+        </header>
+        <nav class="main-nav--mobile main-nav--hide" data-menu="mobile">
+          <ul class="main-nav__list--mobile" id="nav-list-mobile">
+            <li class="main-nav__item--mobile"><a href="room.html" class="main-nav__link">Номера</a></li>
+            <li class="main-nav__item--mobile"><a href="single_room.html" class="main-nav__link">Коттедж</a></li>
+            <li class="main-nav__item--mobile"><a href="" class="main-nav__link">Ресторан</a></li>
+            <li class="main-nav__item--mobile"><a href="" class="main-nav__link">Отдых</a></li>
+            <li class="main-nav__item--mobile"><a href="" class="main-nav__link">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <form class="booking-form">
+
+       <div class="booking">
+         <div class="booking__row">
+           <h2 class="booking__title">Бронирование</h2>
+           <p class="booking__text">Чтобы забронировать номер в отеле или коттедж, заполните форму ниже или просто позвоните по телефону:   <a href="tel:+7 (812) 000000" class="page-header__phone-link">+7 812 000000</a></p>
+         </div>
+       </div>
+
+       <section class="date-form">
+         <div class="date-form__inner">
+           <div class="date-form__row">
+             <p class="date-form__step">Шаг 1</p>
+             <h3 class="date-form__subtitle">Дата отдыха</h3>
+             <ul class="date-field">
+               <li class="date-field__list-item">
+                 <label class="date-field__text">Дата въезда<br>
+                   <input class="date-field__item" id="date-start" type="number" placeholder="ДД" min="1" max="31">
+                   <input class="date-field__item" type="number" placeholder="ММ" min="1" max="12">
+                   <input class="date-field__item" type="number" placeholder="ГГГГ" min="2016" max="2020">
+                 </label>
+               </li>
+               <li class="date-field__list-item">
+                 <label class="date-field__text">Дата выезда<br>
+                   <input class="date-field__item" id="date-end" type="number" placeholder="ДД" min="1" max="31">
+                   <input class="date-field__item" type="number" placeholder="ММ" min="1" max="12">
+                   <input class="date-field__item" type="number" placeholder="ГГГГ" min="2016" max="2020">
+                 </label>
+               </li>
+             </ul>
+           </div>
+         </div>
+       </section>
+
+       <section class="accommodation-form">
+         <div class="accommodation-form__inner">
+           <div class="accommodation-form__row">
+             <p class="accommodation-form__step">Шаг 2</p>
+             <h3 class="accommodation-form__subtitle">Место проживания</h3>
+             <div class="accommodation-form__item">
+               <ul class="accommodation-choice">
+                 <li class="accommodation-choice__list-item">
+                   <label class="accommodation-choice__text accommodation-choice__text--hotel">
+                     <input class="accommodation-choice__item" name="accommodation" type="radio" value="hotel" checked><span>Отель</span>
+                   </label>
+                 </li>
+                 <li class="accommodation-choice__list-item">
+                   <label class="accommodation-choice__text accommodation-choice__text--cottage">
+                     <input class="accommodation-choice__item" name="accommodation" type="radio" value="cottage"><span>Коттедж</span>
+                   </label>
+                 </li>
+               </ul>
+             </div>
+           </div>
+         </div>
+       </section>
+
+       <section class="grade-form" id="grade-form">
+         <div class="grade-form__inner">
+           <div class="grade-form__row">
+             <p class="grade-form__step">Шаг 3</p>
+             <div class="grade-form__item">
+               <h3 class="grade-form__subtitle">Тип коттеджа</h3>
+               <ul class="grade-choice">
+                 <li class="grade-choice__list-item">
+                   <label class="grade-choice__text">
+                     <input class="grade-choice__item" name="grade" type="radio" value="flagman"><span>Флагман</span>
+                   </label>
+                 </li>
+                 <li class="grade-choice__list-item">
+                   <label class="grade-choice__text">
+                      <input class="grade-choice__item" name="grade" type="radio" value="ozernyi"><span>Озёрный</span>
+                   </label>
+                 </li>
+                 <li class="grade-choice__list-item">
+                   <label class="grade-choice__text">
+                     <input class="grade-choice__item" name="grade" type="radio" value="olhovka"><span>Ольховка</span>
+                   </label>
+                 </li>
+                 <li class="grade-choice__list-item">
+                   <label class="grade-choice__text">
+                      <input class="grade-choice__item" name="grade" type="radio" value="portovyi"><span>Портовый</span>
+                   </label>
+                 </li>
+               </ul>
+               <div class="grade-choice__detail">
+               <ul class="grade-choice__detail-list">
+                 <li class="grade-choice__detail-item">Площадь 100м<sup>2</sup></li>
+                 <li class="grade-choice__detail-item">3 комнаты</li>
+                 <li class="grade-choice__detail-item">5 спальных мест</li>
+                 <li class="grade-choice__detail-item">Раздельный санузел</li>
+                 <li class="grade-choice__detail-item">Wi-fi</li>
+               </ul>
+               <ul class="grade-choice__detail-list">
+                 <li class="grade-choice__detail-item">Площадь 50м<sup>2</sup></li>
+                 <li class="grade-choice__detail-item">2 комнаты</li>
+                 <li class="grade-choice__detail-item">3 спальных мест</li>
+                 <li class="grade-choice__detail-item">Раздельный санузел</li>
+                 <li class="grade-choice__detail-item">Wi-fi</li>
+               </ul>
+               <ul class="grade-choice__detail-list">
+                 <li class="grade-choice__detail-item">Площадь 70м<sup>2</sup></li>
+                 <li class="grade-choice__detail-item">2 комнаты</li>
+                 <li class="grade-choice__detail-item">4 спальных мест</li>
+                 <li class="grade-choice__detail-item">Раздельный санузел</li>
+                 <li class="grade-choice__detail-item">Wi-fi</li>
+               </ul>
+               <ul class="grade-choice__detail-list">
+                 <li class="grade-choice__detail-item">Площадь 80м<sup>2</sup></li>
+                 <li class="grade-choice__detail-item">3 комнаты</li>
+                 <li class="grade-choice__detail-item">4 спальных мест</li>
+                 <li class="grade-choice__detail-item">Раздельный санузел</li>
+                 <li class="grade-choice__detail-item">Wi-fi</li>
+               </ul>
+               </div>
+             </div>
+
+           </div>
+         </div>
+       </section>
+
+       <section class="personal-form">
+         <div class="personal-form__inner">
+           <div class="personal-form__row">
+             <p class="personal-form__step">Шаг 4</p>
+             <h3 class="personal-form__subtitle">Персональная информация</h3>
+             <div class="personal-form__item">
+               <ul class="personal-field">
+                 <li class="personal-field__list-item">
+                   <input class="personal-field__item" type="text" placeholder="ИМЯ" required>
+                   <span></span>
+                 </li>
+                 <li class="personal-field__list-item">
+                   <input class="personal-field__item" type="text" placeholder="ФАМИЛИЯ" required>
+                   <span></span>
+                 </li>
+                 <li class="personal-field__list-item">
+                   <input class="personal-field__item" type="tel" placeholder="НОМЕР ТЕЛЕФОНА" required>
+                   <span></span>
+                 </li>
+                 <li class="personal-field__list-item">
+                   <span class="personal-field__text">Мы свяжемся с вами в случае надобности.</span>
+                 </li>
+                 <li class="personal-field__list-item">
+                   <input class="personal-field__item" type="email" placeholder="E-MAIL" required>
+                   <span></span>
+                 </li>
+                 <li class="personal-field__list-item">
+                   <span class="personal-field__text">На этот адрес мы вышлем вам подтверждение о забронированном номере.</span>
+                 </li>
+               </ul>
+             </div>
+           </div>
+         </div>
+       </section>
+
+       <section class="payment-form">
+         <div class="payment-form__inner">
+           <div class="payment-form__row">
+             <p class="payment-form__step">Шаг 5</p>
+             <h3 class="payment-form__subtitle">Способ оплаты</h3>
+           </div>
+
+           <div class="payment-form__items">
+             <div class="payment-choice">
+               <div class="payment-choice__variant">
+                 <label class="payment-choice__text">
+                   <input class="payment-choice__item" name="payment" type="radio" value="later"><span>По приезду</span>
+                 </label>
+                 <p class="payment-choice__explanation">Вы можете произвести оплату по факту заселения</p>
+               </div>
+
+               <div class="payment-choice__variant">
+                 <label class="payment-choice__text">
+                   <input class="payment-choice__item" name="payment" type="radio" value="now" checked><span>Сейчас</span>
+                 </label>
+                 <p class="payment-choice__explanation">Прямо сейчас вы можете произвести оплату с помощью банковской карты.</p>
+                 <ul class="payment-choice__creditcard">
+                   <li class="payment-choice__list-item">
+                     <label class="payment-choice__creditcard-text"><span>Номер карты</span>
+                       <input class="payment-choice__creditcard-item" type="text" placeholder="0000-0000-0000-0000" required>
+                       <span></span>
+                     </label>
+                   </li>
+                   <li class="payment-choice__list-item">
+                     <label class="payment-choice__creditcard-text"><span>Фамилия владельца карты</span>
+                       <input class="payment-choice__creditcard-item" type="text" placeholder="VLADIMIR VLADIMIROV" required>
+                       <span></span>
+                     </label>
+                   </li>
+                   <li class="payment-choice__list-item payment-choice__list-item--short">
+                     <label class="payment-choice__creditcard-text"><span>Код CVV</span>
+                       <i class="form-question"></i>
+                       <input class="payment-choice__creditcard-item" type="text" placeholder="123" required>
+                       <span></span>
+                     </label>
+                   </li>
+                   <li class="payment-choice__list-item payment-choice__list-item--short">
+                     <label class="payment-choice__creditcard-text"><span>Действует до</span>
+                       <input class="payment-choice__creditcard-item" type="text" placeholder="01 / 2018" required>
+                       <span></span>
+                     </label>
+                   </li>
+                 </ul>
+               </div>
+             </div>
+
+             <div class="payment-choice__sum">
+                 <p class="payment-choice__sum-text">К оплате</p>
+                 <p class="payment-choice__sum-number">14 000 руб.</p>
+                 <p class="payment-choice__notice"> <i class="price-error"></i> Пожалуйста, <a href="#date-start" class="payment-choice__notice-link">выберите
+                     дату въезда</a> и выезда, чтобы увидеть сумму к оплате
+                 </p>
+             </div>
+
+             <div class="payment-choice__btn">
+               <button class="btn btn--booking">
+                 Забронировать
+               </button>
+             </div>
+
+           </div>
+         </div>
+       </section>
+     </form>
+
+  <footer class="page-footer">
+    <div class="page-footer__inner">
+      <div class="page-footer__row">
+        <p class="page-footer__address"><span>г.Санкт-Петербург</span><br> <span>Приморское ш.600</span></p>
+        <div class="page-footer__social">
+          <a href="" class="site-logo"><img src="" alt=""></a>
+          <ul class="page-footer__social-links">
+            <li class="page-footer__social-item">
+              <a href="" class="page-footer__icon-vk">
+              </a>
+            </li>
+            <li class="page-footer__social-item">
+              <a href="" class="page-footer__icon-inst"></a>
+            </li>
+            <li class="page-footer__social-item">
+              <a href="" class="page-footer__icon-fb"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="contacts">
+          <a href="tel:+7 (812) 000000" class="page-header__phone-link">+7 812 000000</a>
+          <a href="" class="contacts__mail">info@greenvalley.ru</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.min.js"></script>
+</body>
+</html>

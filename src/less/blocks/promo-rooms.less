@@ -1,0 +1,48 @@
+.promo-rooms{
+  background-image: url(img/promo-rooms_bg.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 50% 50%;
+
+    @media (min-width: @screen-md) {
+      background-size: cover;
+    }
+
+  &__inner{
+    .container;
+  }
+
+  &__row{
+    .row;
+    min-height: 200px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title{
+    .col (xs, 12);
+    .col (xl, 6);
+    color: @white;
+    font-family: @font-family-serif;
+    font-size: @font-size-h2;
+    font-weight: normal;
+    text-align: center;
+    letter-spacing: @letter-spacing;
+
+      @media (min-width: @screen-sm){
+        font-size: @font-size-h1;
+        line-height: 42px;
+      }
+  }
+  &__text{
+    .hidden-down(sm);
+    .col (sm, 9);
+    .col (xl, 6);
+    color: @white;
+    font-weight: normal;
+    text-align: center;
+    margin: 0;
+    letter-spacing: @letter-spacing/3;
+  }
+}

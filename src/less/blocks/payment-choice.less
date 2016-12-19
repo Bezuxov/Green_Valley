@@ -1,0 +1,312 @@
+.payment-choice{
+  .col (xs, 12);
+
+   @media (max-width: @screen-xl){
+          padding-left: 0px;
+          padding-right: 0px;
+      }
+
+  @media (min-width: @screen-md) {
+      order: 1;
+      flex: 0 0 64.1%;
+      max-width: 64.1%;
+  }
+
+  &__variant{
+  background-color: @white;
+  border: 1px solid @gray-lighter;
+  margin-top: 20px;
+  padding-top: 23px;
+  padding-bottom: 23px;
+
+    @media (min-width: @screen-md) {
+      .row;
+      margin-left: 20px;
+      margin-right: 0px;
+      align-items: center;
+      padding-top: 1px;
+      padding-bottom: 1px;
+      margin-top: 23px;
+    }
+
+    @media (min-width: @screen-xl) {
+      margin-left: 10px;
+      margin-right: -10px;
+    }
+  }
+
+  &__text{
+    .col (md, 4);
+    font-size: @font-size-small;
+    color: @gray-darker;
+    font-weight: 500;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: @letter-spacing;
+    display: inline-block;
+    position: relative;
+    padding-left: 75px;
+
+    @media (min-width: @screen-md) {
+        padding-left: 60px;
+      }
+
+    span:after {
+      content: '';
+      background-image: url(img/sprites/spritesheet_2.png);
+      background-repeat: no-repeat;
+      display: inline-block;
+      background-position: -10px -10px;
+      width: 16px;
+      height: 12px;
+      position: absolute;
+      left: 40px;
+      top: 0px;
+
+      @media (min-width: @screen-md) {
+        left: 20px;
+        top: 3px;
+      }
+    }
+
+    input[type="radio"]:checked + span:after{
+        display: none;
+      }
+
+    input[type="radio"]:checked + span:before{
+      content: '';
+      .sprite_1;
+      .sprite-form-check;
+      position: absolute;
+      left: 40px;
+      top: 0px;
+
+      @media (min-width: @screen-md) {
+        left: 20px;
+        top: 3px;
+      }
+     }
+  }
+
+  &__item{
+    display:none;
+    cursor:pointer;
+  }
+
+  &__explanation{
+    .hidden-down (sm);
+    font-size: @font-size-small;
+    color: @gray-darker;
+    font-weight: 300;
+    text-align: left;
+    letter-spacing: @letter-spacing;
+
+    @media (min-width: @screen-md) {
+        .col (md, 8);
+      }
+  }
+
+  &__creditcard{
+    .row;
+    list-style-type: none;
+    margin-top: 5px;
+    margin-bottom: 0;
+    @media (min-width: @screen-md) {
+      margin: 0 10px 25px;
+    }
+    @media (max-width: (@screen-md - 1px)){
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  &__list-item{
+    .col (xs, 12);
+    .col (md, 7);
+
+    @media (max-width: (@screen-md - 1px)){
+          padding-left: 0px;
+          padding-right: 0px;
+      }
+
+    &--short{
+      .col (xs, 9);
+      .col (md, 5);
+    }
+
+    @media (max-width: (@screen-md - 1px)){
+          padding-left: 0px;
+          padding-right: 0px;
+      }
+
+    @media (min-width: @screen-md) {
+      &:nth-child(1){
+        order: 0;
+      }
+      &:nth-child(2){
+        order: 2;
+      }
+      &:nth-child(3){
+        order: 1;
+      }
+      &:nth-child(4){
+        order: 3;
+      }
+    }
+  }
+
+  &__creditcard-text{
+    font-size: @font-size-small;
+    color: @gray-darker;
+    font-weight: 300;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: @letter-spacing;
+    display: inline-block;
+    position: relative;
+    padding: 0px 40px;
+    position: relative;
+
+    @media (min-width: @screen-md) {
+      padding: 0px;
+    }
+
+    >i{
+      display: none;
+
+      @media (min-width: @screen-xl) {
+        display: inline-block;
+        position: absolute;
+        top: 12px;
+        left: 150px;
+     }
+    }
+
+
+
+    >span{
+      display: inline-block;
+      padding: 10px 0;
+
+      @media (min-width: @screen-md) {
+      padding: 11px 0;
+      }
+    }
+
+    input:required:valid + span:before{
+      content: '';
+      .sprite_1;
+      .sprite-form-check;
+      position: absolute;
+      left: 10px;
+      top: 55px;
+    }
+
+    input:focus:required:invalid + span:after{
+      content: '';
+      .sprite_1;
+      .sprite-form-error;
+      position: absolute;
+      left: 10px;
+      top: 55px;
+    }
+  }
+
+  &__creditcard-item{
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    background-color: @white;
+    font-family: @font-family-base;
+    color: @gray-base;
+    font-size: @font-size-small;
+    font-weight: 300;
+    letter-spacing: @letter-spacing;
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid @gray-lighter;
+    outline: none;
+  }
+
+  &__sum{
+    .col (xs, 12);
+    background-color: @white;
+    border: 1px solid @gray-lighter;
+    margin-top: 20px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    text-align: center;
+
+    @media (max-width: (@screen-md - 1px)){
+          padding-left: 0px;
+          padding-right: 0px;
+      }
+
+    @media (min-width: @screen-md) {
+      order: 0;
+      flex: 0 0 35.9%;
+      max-width: 35.9%;
+      margin-top: 23px;
+    }
+  }
+
+  &__sum-text{
+    font-size: @font-size-small;
+    color: @gray-darker;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: @letter-spacing;
+    margin: 0;
+  }
+
+  &__sum-number{
+    font-size: @font-size-h2 - 6px;
+    color: @gray-base;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: @letter-spacing;
+    margin: 0;
+  }
+
+  &__notice,
+  &__notice-link{
+    font-size: @font-size-small;
+    color: @gray-darker;
+    font-weight: 300;
+    text-align: left;
+    letter-spacing: @letter-spacing;
+    display: inline-block;
+  }
+
+  &__notice{
+    padding: 0 40px;
+    margin: 0;
+
+    @media (min-width: @screen-md) {
+      padding: 0 20px;
+    }
+  }
+
+  &__notice-link{
+    text-decoration: none;
+    border-bottom: 1px dashed @gray-base;
+  }
+
+  &__btn{
+    .col (xs, 12);
+    margin-top: 50px;
+
+    @media (max-width: @screen-xl){
+          padding-left: 0px;
+          padding-right: 0px;
+      }
+
+    @media (min-width: @screen-md) {
+      order: 2;
+      padding: 0;
+    }
+  }
+
+}

@@ -1,0 +1,79 @@
+.single-room {
+
+  &__inner {
+    .container;
+    margin-bottom: 20px;
+
+      @media (min-width: @screen-md)
+        and (max-width: @screen-xl) {
+        margin-bottom: 70px;
+      }
+
+      @media (max-width: @screen-xl){
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+
+  }
+
+  &__row {
+    .row;
+
+    @media (max-width: @screen-xl){
+      margin: 0;
+    }
+  }
+
+  &__title-text {
+    .col (xs, 12);
+    .col (md, 4);
+    .col-offset(md, 4);
+    .col (xl, 2);
+    .col-offset(xl, 5);
+    text-align: center;
+
+    @media (min-width: @screen-md) {
+        margin-bottom: 17px;
+      }
+
+    @media (max-width: @screen-xl){
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+  }
+
+  &__subtitle{
+    font-size: @font-size-h2;
+    line-height: 30px;
+    font-family: @font-family-serif;
+    color: @black;
+    font-weight: normal;
+    margin-top: 45px;
+    margin-bottom: 7px;
+    letter-spacing: @letter-spacing;
+  }
+
+  &__btn {
+    .col (xs, 12);
+    .col (md, 4);
+    .col-offset(md, 4);
+    .col (xl, 2);
+    .col-offset(xl, 5);
+    text-align: center;
+    margin-top: 45px;
+
+    @media (min-width: @screen-xl) {
+        order: 2;
+        margin-top: 95px;
+      }
+
+    @media (max-width: @screen-xl){
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+
+      .price-text{
+        margin-top: 16px;
+      }
+  }
+}

@@ -1,0 +1,100 @@
+.route{
+  margin-bottom: 50px;
+
+  &__inner{
+    .container;
+
+    @media (max-width: @screen-xl){
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+
+  &__row{
+    .row;
+    justify-content: center;
+
+    @media (max-width: @screen-xl){
+      margin: 0;
+    }
+  }
+  &__subtitle{
+    .col (xs, 10);
+    font-size: @font-size-h2 - 4px;
+    font-family: @font-family-serif;
+    font-weight: normal;
+    text-align: center;
+
+    @media (min-width: @screen-sm) {
+      font-size: @font-size-h2;
+    }
+
+    @media (max-width: @screen-xl){
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+  &__map{
+    .col (xs, 12);
+    text-align: center;
+
+    @media (max-width: @screen-xl){
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+  }
+  &__item{
+    .col (xs, 10);
+    .col (xl, 5);
+    padding-top: 84px;
+    position: relative;
+    align-self: flex-start;
+    text-align: center;
+    min-height: 220px;
+
+      @media (min-width: @screen-sm) {
+        padding-top: 77px;
+      }
+      @media (min-width: @screen-xl) {
+        text-align: left;
+        min-height: 200px;
+        padding-top: 92px;
+      }
+
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 58px;
+      height: 29px;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      top: 15%;
+      }
+      &:nth-child(1):before {
+       background-image: url(../img/route__transport-bus.png);
+      }
+      &:nth-child(2):before {
+       background-image: url(../img/route__transport-train.png);
+      }
+  }
+  &__transport{
+    font-size: @font-size-small;
+    line-height: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+  }
+  &__text{
+    display: inline-block;
+    text-align: center;
+     @media (min-width: @screen-xl) {
+      text-align: left;
+    }
+  }
+
+
+}

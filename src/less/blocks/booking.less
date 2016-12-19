@@ -1,0 +1,48 @@
+.booking{
+  .container;
+  margin-top: 38px;
+  margin-bottom: 40px;
+
+  @media (min-width: @screen-md) {
+    margin-bottom: 42px;
+  }
+
+  &__row{
+    .row;
+  }
+
+  &__title{
+    .col (xs, 12);
+    .col (md, 6);
+    .col-offset(md, 3);
+    .col (xl, 4);
+    .col-offset(xl, 4);
+    font-family: @font-family-serif;
+    font-size: @font-size-h2;
+    color: @black;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: @letter-spacing;
+    margin-bottom: 18px;
+
+  }
+
+  &__text{
+    .col (xs, 10);
+    .col-offset(xs, 1);
+    .col (md, 6);
+    .col-offset(md, 3);
+    .col (xl, 4);
+    .col-offset(xl, 4);
+    color: @black;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  &__phone{
+    color: #eb6a2f;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,106 @@
+.accommodation-choice{
+  .row;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid @gray-lighter;
+  padding: 26.5px 0;
+
+   @media (min-width: @screen-md) {
+      margin: 0 30px;
+    }
+
+    @media (min-width: @screen-xl) {
+      margin: 0 50px;
+    }
+
+    @media (max-width: @screen-md){
+      margin: 0;
+    }
+
+  &__list-item{
+    .col (xs, 6);
+    text-align: center;
+    padding-bottom: 83px;
+    border-right: 1px solid @gray-lighter;
+
+    &:last-child{
+      border-right: none;
+    }
+  }
+
+  &__text{
+    font-size: @font-size-small;
+    color: @gray-darker;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: @letter-spacing;
+    display: inline-block;
+    position: relative;
+
+    input[type="radio"]:checked + span:before{
+      content: '';
+      .sprite_1;
+      .sprite-form-check;
+      position: absolute;
+      left: 20px;
+      top: 105px;
+    }
+
+
+
+    &--hotel{
+
+      input[type="radio"]:checked + span:after{
+      opacity: 1;
+      }
+
+      span:after {
+        content: '';
+        display: inline-block;
+        width: 82px;
+        height: 64px;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        left: -15px;
+        top: 30px;
+        opacity: 0.4;
+        background-image: url(img/accommodation-form_hotel.png);
+      }
+
+
+
+    }
+    &--cottage{
+
+      input[type="radio"]:checked + span:after{
+      opacity: 1;
+      }
+
+      span:after {
+        content: '';
+        display: inline-block;
+        width: 80px;
+        height: 62px;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        left: -10px;
+        top: 30px;
+        opacity: 0.4;
+        background-image: url(img/accommodation-form_cottage.png);
+      }
+
+
+    }
+  }
+
+  &__item{
+    display: inline-block;
+    display:none;
+    cursor:pointer;
+  }
+
+}
