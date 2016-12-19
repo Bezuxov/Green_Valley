@@ -16,7 +16,7 @@
 
 .main-nav__icon-bar {
     display: inline-block;
-    background-color: #ff7435;
+    background-color: @color-info;
     width: 12px;
     height: 4px;
     margin: 2.5px 0;
@@ -33,7 +33,7 @@
     display: none;
 }
 
-@media (max-width:  1199px){
+@media (max-width: @screen-xl){
   .main-nav__list-mobile{
     display: none;;
   }
@@ -57,14 +57,14 @@ a {
     width: 100%;
     text-align: center;
     padding: 14px 0;
-    border-top: 1px solid #ebebeb;
+    border-top: 1px solid @gray-lighter;
 }
 
 .main-nav__item--mobile:last-child {
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 1px solid @gray-lighter;
 }
 
-@media (max-width:  1199px){
+@media (max-width:  @screen-xl){
   .main-nav{
     display: none;
     padding: 0;
