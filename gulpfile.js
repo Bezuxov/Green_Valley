@@ -134,8 +134,11 @@ gulp.task('js', function () {
       dirs.source + '/js/jquery-migrate-1.4.1.min.js',
       dirs.source + '/js/owl.carousel.min.js',
       dirs.source + '/js/script.js',
-      //dir.source  + '/js/promo-slider.js',
-      //dir.source  + '/js/review-item.js',
+      dirs.source  + '/js/promo-slider.js',
+      dirs.source  + '/js/review-item.js',
+      dirs.source + '/js/slider.js',
+      dirs.source + '/js/slider-colorbox.js',
+      dirs.source + '/js/slick.min.js',
     ])
     .pipe(plumber({ errorHandler: onError }))
     .pipe(concat('script.min.js'))
