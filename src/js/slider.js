@@ -24,4 +24,11 @@ $(document).ready(function(){
     $('#gallery-main-pict').html('<img src="'+imageUrl+'" alt="">');
   });
 
+  $('a').on('click', function(e){
+  e.preventDefault();
+  var pic = $(this).data('img');
+
+  $('#big img').attr('src', pic);
+});
+
 });
