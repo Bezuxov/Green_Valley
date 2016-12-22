@@ -134,6 +134,8 @@ gulp.task('js', function () {
       dirs.source + '/js/jquery-migrate-1.4.1.min.js',
       dirs.source + '/js/owl.carousel.min.js',
       dirs.source + '/js/script.js',
+      //dir.source  + '/js/promo-slider.js',
+      //dir.source  + '/js/review-item.js',
     ])
     .pipe(plumber({ errorHandler: onError }))
     .pipe(concat('script.min.js'))
@@ -200,6 +202,7 @@ gulp.task('serve', gulp.series('build', function() {
   browserSync.init({                                        // запускаем локальный сервер (показ, автообновление, синхронизацию)
     server: dirs.build,                                     // папка, которая будет «корнем» сервера (путь из константы)
     port: 3000,                                             // порт, на котором будет работать сервер
+    tunnel:true,
     startPath: 'index.html',                                // файл, который буде открываться в браузере при старте сервера
     // open: false                                          // возможно, каждый раз стартовать сервер не нужно...
   });

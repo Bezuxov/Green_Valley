@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  $('#gallery-thumbs').owlCarousel({
+  $('.gallery-slider__main-item').owlCarousel({
     items: 3,
     loop: true,
     center: true,
@@ -14,21 +14,22 @@ $(document).ready(function(){
     }
   });
 
-  var mainImageUrl = $('#gallery-start-photo').attr('href');
+  var mainImageUrl = $('.gallery-slider').attr('href');
 
-  $('#gallery-main-pict').html('<img src="'+mainImageUrl+'" alt="">');
+  $('.gallery-slider__main-img').html('<img src="img/accommodation_list-item-2.jpg'+mainImageUrl+'" alt="">');
 
-  $('#gallery-thumbs a').on('click', function(e){
+  $('.gallery-slider__main-item a').on('click', function(e){
     e.preventDefault();
     var imageUrl = $(this).attr('href');
-    $('#gallery-main-pict').html('<img src="'+imageUrl+'" alt="">');
+    $('.gallery-slider__main-img').html('<img src="img/accommodation_list-item-1.jpg'+imageUrl+'" alt="">');
   });
 
-  $('a').on('click', function(e){
-  e.preventDefault();
-  var pic = $(this).data('img');
-
-  $('#big img').attr('src', pic);
 });
 
-});
+
+/*$('a').on('click', function(e){
+e.preventDefault();
+var pic = $(this).data('img');
+
+$('#big img').attr('src', pic);
+});*/

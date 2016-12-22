@@ -1,26 +1,63 @@
-.btn--icon-calendar {
-    padding-left: 45px;
-    padding-right: 25px;
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-}
+    padding: 10px 35px 8px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    font-family: @font-family-base;
+    font-size: @font-size-small;
+    color: @white;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    border-radius: 70px;
+    min-height: @font-size-small*2.5;
+    background-color: @color-info;
+    letter-spacing: @letter-spacing;
 
-.btn--bg-orange  {
-  font-size: 14px;
-  font-family: 'Fira Sans',sans-serif;
-  line-height: 18px;
-  font-weight: 500;
-  color: @white;
-  margin-bottom: 0;
-  background-image: none;
-  text-decoration: none;
-  background-color: @color-info;
-  padding: 10px 30px;
-  border-radius: 70px;
-  display: inline-block;
-  touch-action: manipulation;
-  cursor: pointer;
-  border: none;
-  outline: 0;
-  transition: ease-in-out all 400ms;
-  text-transform: uppercase;
+    &:hover{
+      background-color: @color-info-hover;
+    }
+
+    &--calendar{
+      padding-left: 45px;
+      padding-right: 25px;
+      position: relative;
+
+      &:before {
+        content: '';
+        .sprite_1;
+        .sprite-icon-calendar;
+        position: absolute;
+        left: 10%;
+        bottom: 12px;
+      }
+    }
+
+    &--transparent{
+      background-color: transparent;
+      border: 2px solid @white;
+      padding: 10px 30px;
+
+      &:hover{
+      background-color: @white;
+      color: @color-logo;
+      }
+    }
+
+    &--booking{
+      background-color: @color-logo;
+      border-radius: 0;
+      width: 100%;
+      border: none;
+      min-height: 50px;
+
+      &:hover{
+      background-color: @color-logo-hover;
+    }
+  }
 }
