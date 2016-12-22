@@ -1,6 +1,6 @@
 $( function() {
   var
-    from = $( "#start" ).datepicker()
+    from = $( "#date-start" ).datepicker()
       .on( "change", function() {
         to.datepicker( "option", "minDate", getDate( this ) );
         var date = $(this).datepicker('getDate');
@@ -8,7 +8,7 @@ $( function() {
         $( "#start-m" ).text( date.getMonth() + 1 );
         $( "#start-y" ).text( date.getFullYear() );
       }),
-    to = $( "#fin" ).datepicker()
+    to = $( "#date-end" ).datepicker()
       .on( "change", function() {
         from.datepicker( "option", "maxDate", getDate( this ) );
         var date = $(this).datepicker('getDate');

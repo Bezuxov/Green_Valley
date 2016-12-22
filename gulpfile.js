@@ -139,6 +139,8 @@ gulp.task('js', function () {
       dirs.source + '/js/slider.js',
       dirs.source + '/js/slider-colorbox.js',
       dirs.source + '/js/slick.min.js',
+      dirs.source + '/js/date.js',
+      dirs.source + '/js/grade-choice.js',
     ])
     .pipe(plumber({ errorHandler: onError }))
     .pipe(concat('script.min.js'))

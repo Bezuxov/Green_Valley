@@ -1,18 +1,18 @@
 .page-header {
   padding: 10px;
-  border-bottom: 1px solid ##ebebeb;
+  border-bottom: 1px solid @gray-lighter;
   &-inner{
     box-sizing: border-box;
   }
 }
 
-@media (max-width: 480px){
+@media (max-width: @screen-sm){
   .page-header{
     padding: 10px;
     border-bottom: 10px solid #cffaff;
   }
 }
-@media (min-width: 480px){
+@media (min-width: @screen-sm){
 .page-header__inner {
     width: 100%;
   }
@@ -26,7 +26,7 @@
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
-    max-width: 1200px;
+    max-width: @screen-xl;
   }
 
 .site-logo {
@@ -35,7 +35,7 @@
     height: 100%;
 }
 
-@media (min-width: 1199px){
+@media (min-width: @screen-xl){
   .burger-menu{
     display: none;
   }
@@ -51,10 +51,10 @@
 
 .page-header__contacts a{
   font-size: 14px;
-  line-height: 18px;
+  line-height: 28px;
   font-family: 'Fira Sans',sans-serif;
-  font-weight: 300;
-  color: #191919;
+  font-weight: 600;
+  color: @gray-base;
 }
   .page-header__phone-link {
     font-size: 18px;
@@ -62,14 +62,14 @@
     font-family: 'PT Sans Caption';
 }
 
-@media (max-width: 1199px){
+@media (max-width:@screen-xl){
 .page-header__contacts {
     display: none;
   }
 }
 
 
-@media (max-width: 1199px){
+@media (max-width:@screen-xl){
 .page-header__btn {
     display: none;
   }
